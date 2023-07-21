@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* set the background color of whole body of ui */
+body{
+    background-color: antiquewhite;
+}
+
+/* set the margin and padding of written elements */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* set the font using goggle fonts family */
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* set the navbar elements and their properties */
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+/* set the proper space between navbar elements */
+nav ul li{
+    padding: 0 12px;
+}
+
+/* navbar desinging */
+.navbar{
+    display: flex;
+    column-gap:2.0rem;
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    font-weight:lighter;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+/* set the place of Melody player written formet */
+.navbar .brand img{
+    width: 70px;
+    padding: 0 20px;
+}
+
+/* set the player height at bottom */
+.container{
+   min-height: 70vh;
+
+    /* here we are giving the design to container */
+   background-color: black;
+   color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 21px auto;
+   width: 60%;
+   border-radius: 50px;
+   padding: 34px;
+   background-image: url('bg.jpg');
+  /* till here we have completed the center ui part */
+}
+
+.songList h1 {
+    font-size: 2.0rem;
+}
+
+/* set the bottom black bar */
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+/* set icons margin for visibility */
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 60px;
+}
+
+/* desing the songlist section */
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.songItem img{
+    width: 47px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.songItem .songName{
+    font-size: 1.5rem;
+}
+
+.timestamp{
+    margin: 0 23px;
+    font-size: 1.3rem;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+/* design soninfo gif section  */
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.7rem;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
+
+/* about section */
+.home-text{
+  color: #0970d8;
+  font-size: 28px;
+  text-align: center;
+}
+
+.home-text span{
+    color: var(--main-color);
+    font-size: 3.5rem;
+    color: #333;
+  /* font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 20px; */
+}
+
+.home-text p{
+    color: var(--text-color);
+    font-size: 2.5rem;
+    color: #0066cc;
+  text-decoration: none;
+    
+}
